@@ -1,0 +1,41 @@
+Options -Indexes
+
+php_flag log_errors On
+php_value error_log logs/error_log
+
+
+RewriteEngine On
+RewriteRule ^public - [L]
+RewriteRule . index.php [L]
+
+
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files composer.*>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files nginx.conf>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files *.log>
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>

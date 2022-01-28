@@ -24,6 +24,11 @@ Just download the `Apilot.php` file, include in your project. Configure `.htaces
 
 ```
 
+### .htaccess files
+
+- Copy extras/root.htaccess in root folder and rename it to .htaccess.
+- Copy extras/public.htaccess in public folder and rename it to .htaccess.
+## Routes
 Make a folder for handlers. Each file in that cockpit folder corresponds to a route.
 
 e.g.
