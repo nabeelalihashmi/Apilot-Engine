@@ -2,7 +2,7 @@
     "name": "nabeelalihashmi/apilot-engine",
     "description": "Simple endpoint-in-files ro",
     "type": "library",
-    "license": "Custom",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "ApilotEngine\\": "src/"
