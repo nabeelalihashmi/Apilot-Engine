@@ -1,6 +1,6 @@
 {
     "name": "nabeelalihashmi/apilot-engine",
-    "description": "Simple endpoint-in-files ro",
+    "description": "Simple endpoint-in-files router for PHP",
     "type": "library",
     "license": "MIT",
     "autoload": {
