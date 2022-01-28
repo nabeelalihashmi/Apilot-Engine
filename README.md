@@ -14,7 +14,7 @@ Design api carefully
     composer require nabeelalihashmi/apilot-engine
 ```
 ### Manual
-Just download the `Apilot.php` file, include in your project. Configure `.htacess`.
+Just download the `Apilot.php` file, include in your project. Configure `.htaccess`.
 
 ```
 <?php
