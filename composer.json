@@ -1,0 +1,19 @@
+{
+    "name": "nabeelalihashmi/apilot-engine",
+    "description": "Simple endpoint-in-files ro",
+    "type": "library",
+    "license": "Custom",
+    "autoload": {
+        "psr-4": {
+            "ApilotEngine\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nabeel Ali",
+            "email": "mail2nabeelali@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
