@@ -6,6 +6,11 @@ Design api carefully
 
 ## Installation
 
+### Using Composer
+```
+    composer require nabeelalihashmi/apilot-engine
+```
+### Manual
 Just download the `Apilot.php` file, include in your project. Configure `.htacess`.
 
 ```
