@@ -1,6 +1,9 @@
 
 # Apilot
 Fast automatic files based router with Caching routes
+
+![alt text](./img/speed.png)
+
 ### WARNING
 Design api carefully
 
