@@ -187,12 +187,19 @@ class Apilot {
                             // loop on uri part, if last character is ?, then make string from array index 0 to that index
                             foreach ($uri_parts as $key => $uri_part) {
                                 if (substr($uri_part, -1) == '?') {
-                                    $__uri = implode('/', array_slice($uri_parts, 0, $key));
+                                    $__uri = implode('/:', array_slice($uri_parts, 0, $key));
+                                    $__uri = preg_replace('/\/+/', '/', $__uri);
+                                    if ($uri !== '/') {
+                                        $__uri = rtrim($__uri, '/');
+                                    }
                                     $files[]  = ['method' => $handler, 'url' => $__uri, 'callback' => $path . '/' . $file, 'before' => $before, 'after' => $after];
                                 }
                             }
                             $uri = str_replace(':', '/:', $uri);
                             $uri = preg_replace('/\/+/', '/', $uri);
+                            if ($uri !== '/') {
+                                $uri = rtrim($uri, '/');
+                            }
                             $files[]  = ['method' => $handler, 'url' => $uri, 'callback' => $path . '/' . $file, 'before' => $before, 'after' => $after];
                         }
                     }
